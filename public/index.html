@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <title>Сравнение</title>
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+
+<body>
+  <div class="subheader">
+    <div class="container">
+      <div class="subheader__breadscrums">
+        <a class="link" href="#">Главная</a> &nbsp; &nbsp;
+        <span class="link__separator">/</span> &nbsp; &nbsp;
+        <a class="link" href="#">Сравнение товаров</a>
+      </div>
+      <h1 class="subheader__name">
+        Сравнение товаров
+      </h1>
+    </div>
+  </div>
+  <div class="container">
+    <section class="comparison">
+      <div class="comparison__container">
+        <div class="comparison__header">
+          <p style="display: inline-block; margin-bottom: 25px;">Для категорий</p> &nbsp;
+          <div class="comparison__prompt js-prompt">
+            <svg>
+              <use xlink:href="images/sprite.svg#question"></use>
+            </svg>
+          </div>
+          <form action="GET" class="comparison__form">
+            <div class="comparison__select-wrapper">
+              <select class="comparison__select-category" name="category" id="select-category">
+                <option value="Смартфоны">Смартфоны</option>
+              </select>
+            </div>
+            <div class="radio-char-group">
+              <input class="comparison-radio" type="radio" name="radio-characteristic" id="all-char-radio" checked>
+              <label class="comparison-radio-label" for="all-char-radio">Все характеристики</label>
+            </div>
+            <div class="radio-char-group">
+              <input class="comparison-radio" type="radio" name="radio-characteristic" id="only-diff-char-radio">
+              <label class="comparison-radio-label" for="only-diff-char-radio">Показать только различия</label>
+            </div>
+          </form>
+        </div>
+        <div class="comparison__feature-names">
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Scripts -->
+  <script type="text/javascript" src="/scripts/main.js" deffer></script>
+</body>
+
+</html>
