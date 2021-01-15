@@ -25,31 +25,137 @@
   <div class="container">
     <section class="comparison">
       <div class="comparison__container">
-        <div class="comparison__header">
-          <p style="display: inline-block; margin-bottom: 25px;">Для категорий</p> &nbsp;
-          <div class="comparison__prompt js-prompt">
-            <svg>
-              <use xlink:href="images/sprite.svg#question"></use>
-            </svg>
-          </div>
-          <form action="GET" class="comparison__form">
-            <div class="comparison__select-wrapper">
-              <select class="comparison__select-category" name="category" id="select-category">
-                <option value="Смартфоны">Смартфоны</option>
-              </select>
+        <div>
+          <div class="comparison__header">
+            <div class="comparison__feature-column">
+              <p style="display: inline-block; margin-bottom: 25px;">Для категорий</p> &nbsp;
+              <div class="comparison__prompt js-prompt">
+                <svg>
+                  <use xlink:href="images/sprite.svg#question"></use>
+                </svg>
+              </div>
+              <form action="GET" class="comparison__form">
+                <div class="comparison__select-wrapper">
+                  <select class="comparison__select-category" name="category" id="select-category">
+                    <option value="Смартфоны">Смартфоны</option>
+                  </select>
+                </div>
+                <div class="radio-char-group">
+                  <input class="comparison-radio" type="radio" name="radio-characteristic" id="all-char-radio" checked>
+                  <label class="comparison-radio-label" for="all-char-radio">Все характеристики</label>
+                </div>
+                <div class="radio-char-group">
+                  <input class="comparison-radio" type="radio" name="radio-characteristic" id="only-diff-char-radio">
+                  <label class="comparison-radio-label" for="only-diff-char-radio">Показать только различия</label>
+                </div>
+              </form>
             </div>
-            <div class="radio-char-group">
-              <input class="comparison-radio" type="radio" name="radio-characteristic" id="all-char-radio" checked>
-              <label class="comparison-radio-label" for="all-char-radio">Все характеристики</label>
-            </div>
-            <div class="radio-char-group">
-              <input class="comparison-radio" type="radio" name="radio-characteristic" id="only-diff-char-radio">
-              <label class="comparison-radio-label" for="only-diff-char-radio">Показать только различия</label>
-            </div>
-          </form>
-        </div>
-        <div class="comparison__feature-names">
+            <div class="comparison__header-product-row">
+              <div class="product-card">
+  <div class="product-card__image" style="background-image: url('images/iphone.png');">
+  </div>
+  <div>
+    <a href="product.html" class="product-card__category">
+      Смартфоны
+    </a>
+    <a href="product.html" class="product-card__title">
+      Apple iPhone 11 64 Gb (Gold)
+    </a>
+    <div class="product-card__price-row">
+      <span class="product-card__price-now">
+        49 999 &#8381;
+      </span>
+      <span class="product-card__price-old">
+        60 999 &#8381;
+      </span>
+    </div>
+    <div class="product-card__buttons-row">
+      <button class="button product-card__add-btn js-add-to-cart">В корзину</button>
+      <button class="button button--transparent product-card__buy-btn js-product-buy">
+        <svg>
+          <use xlink:href="images/sprite.svg#phone"></use>
+        </svg>
+        Купить в 1 клик
+      </button>
+      <button class="button product-card__delete-btn js-product-delete">
+        <svg>
+          <use xlink:href="images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
 
+              <div class="product-card">
+  <div class="product-card__image" style="background-image: url('images/xiaomi.png');">
+  </div>
+  <div>
+    <a href="product.html" class="product-card__category">
+      Смартфоны
+    </a>
+    <a href="product.html" class="product-card__title">
+      Xiaomi Redmi Note 8 Pro (blue)
+    </a>
+    <div class="product-card__price-row">
+      <span class="product-card__price-now">
+        16 700 &#8381;
+      </span>
+      <span class="product-card__price-old">
+        19 999 &#8381;
+      </span>
+    </div>
+    <div class="product-card__buttons-row">
+      <button class="button product-card__add-btn js-add-to-cart">В корзину</button>
+      <button class="button button--transparent product-card__buy-btn js-product-buy">
+        <svg>
+          <use xlink:href="images/sprite.svg#phone"></use>
+        </svg>
+        Купить в 1 клик
+      </button>
+      <button class="button product-card__delete-btn js-product-delete">
+        <svg>
+          <use xlink:href="images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+          <div class="comparison__feature-column">
+            <h3 class="comparison__feature-title">Бонусные рубли</h3>
+
+            <h3 class="comparison__feature-title">Акции и специальные предложения</h3>
+            <h3 class="comparison__feature-title">Наличие</h3>
+            <h3 class="comparison__feature-title">Основные</h3>
+            <h3 class="comparison__feature-subtitle">Операционная система</h3>
+            <h3 class="comparison__feature-subtitle">Цвет</h3>
+            <h3 class="comparison__feature-subtitle">Год выпуска</h3>
+            <h3 class="comparison__feature-title">Процессор</h3>
+            <h3 class="comparison__feature-subtitle">Производитель</h3>
+            <h3 class="comparison__feature-subtitle">Тип</h3>
+            <h3 class="comparison__feature-title">Экран</h3>
+            <h3 class="comparison__feature-subtitle">Диагональ (дюймов)</h3>
+            <h3 class="comparison__feature-subtitle">Тип экрана</h3>
+            <h3 class="comparison__feature-subtitle">Разрешение экрана</h3>
+            <h3 class="comparison__feature-title">Камера</h3>
+            <h3 class="comparison__feature-subtitle">Количество основных камер</h3>
+            <h3 class="comparison__feature-subtitle">Разрешения основных камер</h3>
+            <h3 class="comparison__feature-subtitle">Функции основной камеры</h3>
+            <h3 class="comparison__feature-subtitle">Фронтальная камера</h3>
+            <h3 class="comparison__feature-subtitle">Разрешение фронтальной камеры</h3>
+            <h3 class="comparison__feature-subtitle">Вспышка</h3>
+            <h3 class="comparison__feature-title">Память</h3>
+            <h3 class="comparison__feature-subtitle">Встроенная память</h3>
+            <h3 class="comparison__feature-title">Питание</h3>
+            <h3 class="comparison__feature-subtitle">Тип разъема для зарядки</h3>
+            <h3 class="comparison__feature-subtitle">Функция быстрой зарядки</h3>
+            <h3 class="comparison__feature-subtitle">Функция беспроводной зарядки</h3>
+            <h3 class="comparison__feature-title">Подключение</h3>
+            <h3 class="comparison__feature-subtitle">Разъем Lightning 8 Pin</h3>
+            <h3 class="comparison__feature-subtitle">Разъем для наушников</h3>
+          </div>
         </div>
       </div>
     </section>

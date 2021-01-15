@@ -1,0 +1,71 @@
+.product-card
+  display: flex
+  position: relative
+  width: 405px
+  padding: 25px 0 0 0
+
+  & + &
+    margin-left: 180px
+
+  &__image
+    flex-shrink: 0
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    width: 120px
+    height: 150px
+    margin-right: 25px
+
+  &__category
+    display: block
+    margin-bottom: 20px
+    font-size: 14px
+    color: $c-dark-gray
+
+  &__title
+    display: block
+    margin-bottom: 20px
+    font-weight: 500
+    font-size: 16px
+
+  &__price-row
+    vertical-align: middle
+    margin-bottom: 15px
+
+  &__price-now
+    font-weight: 600
+    font-size: 20px
+    margin-right: 10px
+
+  &__price-old
+    font-size: 14px
+    color: $c-dark-gray
+    text-decoration: line-through
+
+  &__add-btn
+    padding: 10px 20px
+    border-radius: 10px
+    margin-right: 10px
+
+  &__buy-btn
+    font-size: 12px
+
+    svg
+      vertical-align: middle
+      height: 15px
+      width: 15px
+
+  &__delete-btn
+    position: absolute
+    top: 0
+    right: 0
+    width: 17px
+    height: 17px
+    border-radius: 25px
+
+    svg
+      position: absolute
+      top: 4px
+      left: 4px
+      height: 10px
+      width: 10px
