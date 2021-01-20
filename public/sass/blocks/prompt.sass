@@ -1,0 +1,51 @@
+.prompt
+  display: inline-block
+  position: relative
+  height: 20px
+  width: 20px
+  padding: 3px 5px
+  color: black
+  background-color: $c-light-gray
+  border-radius: 20px
+  transition: background-color 200ms
+
+  svg
+    height: 10px
+    width: 10px
+
+  &__window
+    position: absolute
+    bottom: 40px
+    right: 0
+    transform: translateX(50%)
+    pointer-events: none
+    max-width: 260px
+    width: 260px
+    line-height: 20px
+    padding: 20px
+    background-color: white
+    border-radius: 14px
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1)
+    transition: opacity 200ms
+    opacity: 0
+
+    &::after
+      content: ""
+      display: block
+      position: absolute
+      bottom: -7px
+      right: 130px
+      height: 25px
+      width: 25px
+      transform: rotate(45deg)
+      border-radius: 5px
+      background-color: white
+
+  &:hover .prompt__window
+    opacity: 1
+
+  &:hover
+    background-color: darken($c-light-gray, 5)
+
+  &:hover .prompt svg
+    fill: black

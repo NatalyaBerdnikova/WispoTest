@@ -1,0 +1,46 @@
+.form
+  &__header
+    display: inline-block
+    margin-bottom: 25px
+
+  &-radio-label
+    display: inline-block
+    position: relative
+    cursor: pointer
+    margin-bottom: 5px
+    padding: 10px 0 10px 35px
+
+    &::before
+      content: ""
+      position: absolute
+      left: 0
+      top: 6px
+      display: inline-block
+      width: 16px
+      height: 16px
+      background-color: #EEF8F9
+      border: 2px solid #4BB1BC
+      border-radius: 20px
+
+  &-radio:checked + .form-radio-label::after
+    content: ""
+    position: absolute
+    left: 4px
+    top: 10px
+    display: inline-block
+    width: 12px
+    height: 12px
+    border-radius: 20px
+    background-color: #4BB1BC
+
+  &__select
+    &-wrapper
+      width: 250px
+      padding: 15px 20px 15px 20px
+      margin-bottom: 20px
+      border-radius: 10px
+      font-size: 14px
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1) inset
+
+    &-category
+      width: 100%

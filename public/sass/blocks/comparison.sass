@@ -3,87 +3,76 @@
   padding: 45px 30px
   background-color: white
   border-radius: 10px
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15)
+  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.15)
 
   &__header
-    display: flex
     border-bottom: 1px solid $c-dark-gray
     padding-bottom: 25px
 
-    &-product-row
-      display: flex
+  &__column-first
+    min-width: 300px
+    width: 300px
+    margin-right: 20px
 
-  // &__container
-  //   display: grid
-  //   grid-template-columns: 300px auto
+  &__column
+    width: 50%
+    padding-left: 40px
 
-  &-radio-label
-    display: inline-block
-    position: relative
-    cursor: pointer
-    margin-bottom: 5px
-    padding: 10px 0 10px 35px
+  &__row
+    display: flex
+    align-items: baseline
 
-    &::before
-      content: ""
-      position: absolute
-      left: 0
-      top: 6px
-      display: inline-block
-      width: 16px
-      height: 16px
-      background-color: #EEF8F9
-      border: 2px solid #4BB1BC
-      border-radius: 20px
+    &--header
+      align-items: unset
 
-  &-radio:checked + .comparison-radio-label::after
-    content: ""
-    position: absolute
-    left: 4px
-    top: 10px
-    display: inline-block
-    width: 12px
-    height: 12px
-    border-radius: 20px
-    background-color: #4BB1BC
+  &__product-row
+    display: flex
+    width: 100%
 
-  &__select
-    &-wrapper
-      width: 250px
-      padding: 15px 20px 15px 20px
-      margin-bottom: 20px
-      border-radius: 10px
-      font-size: 14px
-      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1) inset
-
-    &-category
-      width: 210px
-
-  &__prompt
-    display: inline-block
-    height: 20px
-    width: 20px
-    padding: 3px 5px
-    background-color: $c-light-gray
-    border-radius: 20px
-
-    svg
-      height: 10px
-      width: 10px
-
-  &__feature-column
-    max-width: 300px
-    margin-right: 100px
+  &__feature
+    padding-top: 20px
 
   &__feature-title
     font-weight: 500
     font-size: 20px
     line-height: 24px
-    margin: 40px 0
+    padding: 20px 60px 25px 0
 
   &__feature-subtitle
     font-size: 14px
     line-height: 17px
     font-weight: 500
     color: $c-dark-gray
-    margin: 25px 0
+    padding: 13px 60px 13px 0
+
+  &__feature-text
+    font-size: 14px
+    line-height: 17px
+    width: 405px
+
+    & + &
+      margin-left: 180px
+
+  &__feature-bonus
+    font-size: 12px
+    font-weight: 700
+    padding: 5px
+    border: 2px solid $c-light-gray
+    border-radius: 5px
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.01)
+
+  &__buttons-row
+    display: flex
+    justify-content: center
+    padding: 10px 0 20px
+
+    .button + .button
+      margin-left: 30px
+
+  &__description
+    width: 1100px
+    margin: 40px auto 20px
+    font-size: 20px
+    font-weight: 600
+    line-height: 24px
+    text-align: center

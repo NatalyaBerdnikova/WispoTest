@@ -1,7 +1,7 @@
 .product-card
   display: flex
   position: relative
-  width: 405px
+  width: 410px
   padding: 25px 0 0 0
 
   & + &
@@ -42,30 +42,14 @@
     color: $c-dark-gray
     text-decoration: line-through
 
+  &__buttons-row
+    display: flex
+    align-items: center
+
   &__add-btn
-    padding: 10px 20px
-    border-radius: 10px
-    margin-right: 10px
-
-  &__buy-btn
-    font-size: 12px
-
-    svg
-      vertical-align: middle
-      height: 15px
-      width: 15px
+    margin-right: 5px
 
   &__delete-btn
     position: absolute
     top: 0
     right: 0
-    width: 17px
-    height: 17px
-    border-radius: 25px
-
-    svg
-      position: absolute
-      top: 4px
-      left: 4px
-      height: 10px
-      width: 10px

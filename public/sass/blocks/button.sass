@@ -1,12 +1,72 @@
 .button
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-shrink: 0
   cursor: pointer
   user-select: none
+  padding: 15px 40px
+  border-radius: 10px
   font-family: $f-primary
-  font-size: 14px
-  line-height: 17px
+  font-size: 16px
+  font-weight: 600
+  line-height: 19px
   color: white
   background-color: black
+  border: 2px solid transparent
+  transition: background-color 200ms, color 200ms, border-color 200ms
+
+  svg
+    max-width: 15px
+    max-height: 15px
+    margin-right: 10px
+    fill: white
+    stroke-width: 2
+    stroke: white
+
+  &:hover
+    color: black
+    background-color: white
+    border-color: black
+
+    svg
+      fill: black
+      stroke: black
+
+  &--small
+    padding: 10px 20px
+    font-size: 14px
+    line-height: 17px
 
   &--transparent
+    font-size: 12px
     background-color: unset
     color: black
+
+  &--light-gray
+    background-color: $c-light-gray
+    color: black
+
+    &:hover
+      border-color: transparent
+      background-color: darken($c-light-gray, 5)
+
+  &--close
+    padding: 0
+    transition: transform 300ms
+    width: 16px
+    height: 16px
+    border-radius: 25px
+
+    svg
+      margin: 0
+      height: 8px
+      width: 8px
+
+    &:hover
+      background-color: black
+      transform: rotate(90deg)
+
+      svg
+        fill: white
+        stroke: white
