@@ -1,0 +1,456 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1;
+  background-color: #F6F6F6;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.comparison {
+  margin: 35px auto 50px;
+  padding: 45px 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.15);
+}
+
+.comparison__header {
+  border-bottom: 1px solid #9a9a9a;
+  padding-bottom: 25px;
+}
+
+.comparison__column-first {
+  min-width: 300px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.comparison__column {
+  width: 50%;
+  padding-left: 40px;
+}
+
+.comparison__row {
+  display: flex;
+  align-items: baseline;
+}
+
+.comparison__row--header {
+  align-items: unset;
+}
+
+.comparison__product-row {
+  display: flex;
+  width: 100%;
+}
+
+.comparison__feature {
+  padding-top: 20px;
+}
+
+.comparison__feature-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 20px 60px 25px 0;
+}
+
+.comparison__feature-subtitle {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: #9a9a9a;
+  padding: 13px 60px 13px 0;
+}
+
+.comparison__feature-text {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.comparison__feature-bonus {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px;
+  border: 2px solid #F6F6F6;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.01);
+}
+
+.comparison__buttons-row {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 20px;
+}
+
+.comparison__buttons-row .button + .button {
+  margin-left: 30px;
+}
+
+.comparison__description {
+  width: 1100px;
+  margin: 40px auto 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+.subheader {
+  background-color: white;
+}
+
+.subheader__breadscrums {
+  padding: 35px 0 20px;
+  font-size: 14px;
+}
+
+.subheader__name {
+  padding: 15px 0 30px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.product-card {
+  display: flex;
+  position: relative;
+  width: 410px;
+  padding: 25px 0 0 0;
+}
+
+.product-card + .product-card {
+  margin-left: 180px;
+}
+
+.product-card__image {
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 120px;
+  height: 150px;
+  margin-right: 25px;
+}
+
+.product-card__category {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.product-card__title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.product-card__price-row {
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+
+.product-card__price-now {
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.product-card__price-old {
+  font-size: 14px;
+  color: #9a9a9a;
+  text-decoration: line-through;
+}
+
+.product-card__buttons-row {
+  display: flex;
+  align-items: center;
+}
+
+.product-card__buttons-row .button + .button {
+  margin-left: 5px;
+}
+
+.product-card__delete-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container {
+  max-width: 1520px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1560px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 15px 35px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  color: white;
+  background-color: black;
+  border: 2px solid transparent;
+  transition: background-color 200ms, color 200ms, border-color 200ms;
+}
+
+.button svg {
+  max-width: 15px;
+  max-height: 15px;
+  margin-right: 10px;
+  fill: white;
+  stroke-width: 2;
+  stroke: white;
+}
+
+.button:hover {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.button:hover svg {
+  fill: black;
+  stroke: black;
+}
+
+.button--small {
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.button--transparent {
+  font-size: 12px;
+  background-color: unset;
+  color: black;
+}
+
+.button--light {
+  background-color: #F6F6F6;
+  color: black;
+}
+
+.button--light:hover {
+  border-color: transparent;
+  background-color: #e9e9e9;
+}
+
+.button--close {
+  padding: 0;
+  transition: transform 300ms;
+  width: 16px;
+  height: 16px;
+  border-radius: 25px;
+}
+
+.button--close svg {
+  margin: 0;
+  height: 8px;
+  width: 8px;
+}
+
+.button--close:hover {
+  background-color: black;
+  transform: rotate(90deg);
+}
+
+.button--close:hover svg {
+  fill: white;
+  stroke: white;
+}
+
+.form__header {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.form__field {
+  margin-bottom: 5px;
+}
+
+.form__radio-label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 0 10px 35px;
+}
+
+.form__radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #EEF8F9;
+  border: 2px solid #4BB1BC;
+  border-radius: 20px;
+}
+
+.form__radio-label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  background-color: #4BB1BC;
+  visibility: hidden;
+}
+
+.form__radio:checked + .form__radio-label::after {
+  visibility: visible;
+}
+
+.form__select-wrapper {
+  width: 250px;
+  padding: 15px 20px 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1) inset;
+}
+
+.form__select-category {
+  width: 100%;
+}
+
+.prompt {
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  padding: 3px 5px;
+  color: black;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  transition: background-color 200ms;
+}
+
+.prompt svg {
+  height: 10px;
+  width: 10px;
+}
+
+.prompt__window {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  transform: translateX(50%);
+  pointer-events: none;
+  max-width: 260px;
+  width: 260px;
+  line-height: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  transition: opacity 200ms;
+  opacity: 0;
+}
+
+.prompt__window::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  right: 130px;
+  height: 25px;
+  width: 25px;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.prompt:hover {
+  background-color: #e9e9e9;
+}
+
+.prompt:hover .prompt__window {
+  opacity: 1;
+}
+
+.link {
+  color: #9a9a9a;
+  transition: color 200ms;
+}
+
+.link:hover {
+  color: #3d3d3d;
+}
+
+.link__separator {
+  margin: 0 10px;
+  color: #9a9a9a;
+}
