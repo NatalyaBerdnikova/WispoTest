@@ -38,23 +38,21 @@ gulp.task('svgSprite', function () {
     .pipe(gulp.dest('public/images'));
 });
 
-// gulp.task('js-libs', function () {
-//   return gulp.src([
-//     'public/libs/swiper-bundle.js'
-//   ])
-//     .pipe(concat('libs.min.js'))
-//     .pipe(uglify())
-//     .pipe(gulp.dest('public/scripts'));
-// });
+gulp.task('js-libs', function () {
+  return gulp.src([
+  ])
+    .pipe(concat('libs.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('public/scripts'));
+});
 
-// gulp.task('css-libs', function () {
-//   return gulp.src([
-//     'public/libs/swiper-bundle.css'
-//   ])
-//     .pipe(concat('libs.min.css'))
-//     .pipe(cssnano())
-//     .pipe(gulp.dest('public/styles'));
-// });
+gulp.task('css-libs', function () {
+  return gulp.src([
+  ])
+    .pipe(concat('libs.min.css'))
+    .pipe(cssnano())
+    .pipe(gulp.dest('public/styles'));
+});
 
 gulp.task('browser-sync', function () {
   browserSync({

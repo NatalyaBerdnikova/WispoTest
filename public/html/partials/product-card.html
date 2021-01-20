@@ -1,10 +1,11 @@
 <div class="product-card">
-  <div class="product-card__image" style="background-image: url('@@image');">
-  </div>
+  <div class="product-card__image" style="background-image: url('@@image');"></div>
   <div>
-    <a href="#" class="product-card__category link">
-      @@category
-    </a>
+    <div class="product-card__category">
+      <a href="#" class="link">
+        @@category
+      </a>
+    </div>
     <a href="#" class="product-card__title">
       @@title
     </a>
@@ -17,18 +18,18 @@
       </span>
     </div>
     <div class="product-card__buttons-row">
-      <button class="button button--small product-card__add-btn">В корзину</button>
+      <button class="button button--small">В корзину</button>
       <button class="button button--small button--transparent">
         <svg>
           <use xlink:href="images/sprite.svg#phone"></use>
         </svg>
         Купить в 1 клик
       </button>
-      <button class="button button--close product-card__delete-btn">
-        <svg>
-          <use xlink:href="images/sprite.svg#close"></use>
-        </svg>
-      </button>
     </div>
   </div>
+  <button class="button button--close product-card__delete-btn">
+    <svg>
+      <use xlink:href="images/sprite.svg#close"></use>
+    </svg>
+  </button>
 </div>

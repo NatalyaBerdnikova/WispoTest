@@ -3,11 +3,13 @@
     display: inline-block
     margin-bottom: 25px
 
-  &-radio-label
+  &__field
+    margin-bottom: 5px
+
+  &__radio-label
     display: inline-block
     position: relative
     cursor: pointer
-    margin-bottom: 5px
     padding: 10px 0 10px 35px
 
     &::before
@@ -18,20 +20,24 @@
       display: inline-block
       width: 16px
       height: 16px
-      background-color: #EEF8F9
-      border: 2px solid #4BB1BC
+      background-color: $c-light-blue
+      border: 2px solid $c-blue
       border-radius: 20px
 
-  &-radio:checked + .form-radio-label::after
-    content: ""
-    position: absolute
-    left: 4px
-    top: 10px
-    display: inline-block
-    width: 12px
-    height: 12px
-    border-radius: 20px
-    background-color: #4BB1BC
+    &::after
+      content: ""
+      position: absolute
+      left: 4px
+      top: 10px
+      display: inline-block
+      width: 12px
+      height: 12px
+      border-radius: 20px
+      background-color: $c-blue
+      visibility: hidden
+
+  &__radio:checked + .form__radio-label::after
+    visibility: visible
 
   &__select
     &-wrapper

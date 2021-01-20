@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сравнение</title>
   <!-- Styles -->
-  <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
@@ -29,30 +29,32 @@
         <div class="comparison__header">
           <div class="comparison__row comparison__row--header">
             <div class="comparison__column-first">
-              <p class="form__header">
+              <div class="form__header">
                 <b>Для категорий</b> &nbsp; &nbsp;
-              <div class="prompt">
-                <svg>
-                  <use xlink:href="images/sprite.svg#question"></use>
-                </svg>
-                <div class="prompt__window">
-                  Выберите категорию товаров для сравнения
+                <div class="prompt">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#question"></use>
+                  </svg>
+                  <div class="prompt__window">
+                    Выберите категорию товаров для сравнения
+                  </div>
                 </div>
               </div>
-              </p>
-              <form action="GET" class="form">
+              <form class="form">
                 <div class="form__select-wrapper">
-                  <select class="form__select-category" name="category" id="select-category">
-                    <option value="Смартфоны">Смартфоны</option>
+                  <select class="form__select-category" name="category">
+                    <option value="0">Смартфоны</option>
+                    <option value="1">Планшеты</option>
+                    <option value="2">Ноутбуки</option>
                   </select>
                 </div>
-                <div class="radio-char-group">
-                  <input class="form-radio" type="radio" name="radio-characteristic" id="all-char-radio" checked>
-                  <label class="form-radio-label" for="all-char-radio">Все характеристики</label>
+                <div class="form__field">
+                  <input class="form__radio" type="radio" name="char" id="all-char-radio" checked>
+                  <label class="form__radio-label" for="all-char-radio">Все характеристики</label>
                 </div>
-                <div class="radio-char-group">
-                  <input class="form-radio" type="radio" name="radio-characteristic" id="only-diff-char-radio">
-                  <label class="form-radio-label" for="only-diff-char-radio">Показать только различия</label>
+                <div class="form__field">
+                  <input class="form__radio" type="radio" name="char" id="only-diff-char-radio">
+                  <label class="form__radio-label" for="only-diff-char-radio">Показать только различия</label>
                 </div>
               </form>
             </div>
@@ -122,8 +124,10 @@
               </div>
             </div>
           </div>
-          <div class="comparison__column-first">
-            <h3 class="comparison__feature-title">Основные</h3>
+          <div class="comparison__row">
+            <div class="comparison__column-first">
+              <h3 class="comparison__feature-title">Основные</h3>
+            </div>
           </div>
           <div class="comparison__row">
             <div class="comparison__column-first">
@@ -164,8 +168,10 @@
               </div>
             </div>
           </div>
-          <div class="comparison__column-first">
-            <h3 class="comparison__feature-title">Процессор</h3>
+          <div class="comparison__row">
+            <div class="comparison__column-first">
+              <h3 class="comparison__feature-title">Процессор</h3>
+            </div>
           </div>
           <div class="comparison__row">
             <div class="comparison__column-first">
@@ -193,8 +199,10 @@
               </div>
             </div>
           </div>
-          <div class="comparison__column-first">
-            <h3 class="comparison__feature-title">Экран</h3>
+          <div class="comparison__row">
+            <div class="comparison__column-first">
+              <h3 class="comparison__feature-title">Экран</h3>
+            </div>
           </div>
           <div class="comparison__row">
             <div class="comparison__column-first">
@@ -235,8 +243,10 @@
               </div>
             </div>
           </div>
-          <div class="comparison__column-first">
-            <h3 class="comparison__feature-title">Камера</h3>
+          <div class="comparison__row">
+            <div class="comparison__column-first">
+              <h3 class="comparison__feature-title">Камера</h3>
+            </div>
           </div>
           <div class="comparison__row">
             <div class="comparison__column-first">
@@ -318,8 +328,10 @@
               </div>
             </div>
           </div>
-          <div class="comparison__column-first">
-            <h3 class="comparison__feature-title">Память</h3>
+          <div class="comparison__row">
+            <div class="comparison__column-first">
+              <h3 class="comparison__feature-title">Память</h3>
+            </div>
           </div>
           <div class="comparison__row">
             <div class="comparison__column-first">
@@ -334,8 +346,10 @@
               </div>
             </div>
           </div>
-          <div class="comparison__column-first">
-            <h3 class="comparison__feature-title">Питание</h3>
+          <div class="comparison__row">
+            <div class="comparison__column-first">
+              <h3 class="comparison__feature-title">Питание</h3>
+            </div>
           </div>
           <div class="comparison__row">
             <div class="comparison__column-first">
@@ -376,8 +390,10 @@
               </div>
             </div>
           </div>
-          <div class="comparison__column-first">
-            <h3 class="comparison__feature-title">Подключение</h3>
+          <div class="comparison__row">
+            <div class="comparison__column-first">
+              <h3 class="comparison__feature-title">Подключение</h3>
+            </div>
           </div>
           <div class="comparison__row">
             <div class="comparison__column-first">
@@ -420,7 +436,7 @@
           сравнение основных характеристик моделей
         </p>
         <div class="comparison__buttons-row">
-          <button class="button button--light-gray">Очистить список</button>
+          <button class="button button--light">Очистить список</button>
           <button class="button">
             <svg>
               <use xlink:href="images/sprite.svg#arrow"></use>
@@ -432,7 +448,7 @@
     </section>
   </div>
   <!-- Scripts -->
-  <script type="text/javascript" src="/scripts/main.js" deffer></script>
+  <script type="text/javascript" src="scripts/main.js" deffer></script>
 </body>
 
 </html>
